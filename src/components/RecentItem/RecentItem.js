@@ -7,7 +7,7 @@ const RecentItem = (props) => {
             <h3>{props.topTitle}</h3>
             <ul id="recent-video">
                 {
-                    props.recentVideo.map(item => <li>{item}</li>)
+                    props.recentVideo.map(item => <li key={item}>{item}</li>)
                 }
             </ul>
             <Button title={props.btnTitle}></Button>
